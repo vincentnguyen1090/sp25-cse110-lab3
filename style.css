@@ -1,9 +1,13 @@
 h1 {
   color: rgb(46, 64, 69);
+  margin-bottom: 1px;
+  padding: 1cm;
+  font-size: auto;
 }
 
 summary {
   color: hsl(150deg 30% 60%);
+  font-size: 12pt;
 }
 
 details[open] {
