@@ -1,3 +1,1 @@
-# Lab 2 - Starter
-
-[Meeting Minutes](https://vincentnguyen1090.github.io/Lab2_Starter/)
+https://vincentnguyen1090.github.io/sp25-cse110-lab3/
