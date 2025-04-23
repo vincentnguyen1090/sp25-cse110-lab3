@@ -1,8 +1,38 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  flex: 0 0 50%;
+  padding: 10px;
+}
+
+main {
+  display: inline;
+}
+
+img {
+  height: auto;
+}
+
 h1 {
+  display: block;
   color: rgb(46, 64, 69);
   margin-bottom: 1px;
-  padding: 1cm;
-  font-size: auto;
+  font-size: 40px;
+  padding-bottom: 1cm;
+  text-align: left;
+}
+
+strong {
+  text-decoration: underline #ff3028;
 }
 
 summary {
@@ -14,10 +44,106 @@ details[open] {
   color: darkslateblue;
 }
 
+video {
+  position: static;
+}
+
+.audiosec {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+}
+
+#audiolabel {
+  padding-top: 10px;
+}
+
 audio {
   color: color(srgb 0.2 0.4 0.6 / 0.5);
+  transition: background-color 0.3s ease;
+  justify-items: start;
+}
+
+audio:active {
+  background-color: darkred;
+  transform: scale(0.98);
+}
+
+.signoutsheet input {
+  padding: 3px;
+}
+
+input[type="text"] {
+  margin-bottom: 1px;
 }
 
 footer {
   background-color: color-mix(in srgb, white 50%, pink 50%);
+}
+
+button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: green;
+}
+
+footer {
+  margin-top: 15px;
+}
+
+form {
+  margin: auto;
+  min-width: 100px;
+  position: absolute;
+}
+
+audio {
+  margin: 0 0 10px 0;
+}
+
+ul li {
+  color: green;
+}
+
+ol > li {
+  color: blue;
+}
+
+h2 ~ h2 {
+  color: orange;
+}
+
+h2 + p {
+  color: orange;
+}
+
+p {
+  color: black;
+}
+
+ul.italics li {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px;
+  }
+
+  .page {
+    width: 100%;
+  }
+}
+
+div:has(h2) {
+  color: black;
 }
